@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo">LOgo</div>
+
+        <nav class="nav" id="nav">
+            <a class="logo-navigation" href="" target="">
+                Element1</a>
+            <a class="logo-navigation" href="" target="">
+                Element2</a>
+            <a class="logo-navigation" href="" target="">
+                Element3 </a>
+            <a class="logo-navigation" href="" target="">
+                Element4</a>
+            <a class="logo-navigation" href="" target="">
+                Element5</a>
+        </nav>
+        <div class="nav-button" onclick="hideButton()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-mobile" id="nav-mobile">
+            <a class="logo-navigation" href="" target="">
+                Element1</a>
+            <a class="logo-navigation" href="" target="">
+                Element2</a>
+            <a class="logo-navigation" href="" target="">
+                Element3 </a>
+            <a class="logo-navigation" href="" target="">
+                Element4</a>
+            <a class="logo-navigation" href="" target="">
+                Element5</a>
+        </nav>
+
+    </div>
+<script>
+    function hideButton() {
+        let elem = document.getElementById("nav-mobile");
+        if(elem.style.display === "none") {
+            elem.style.display = 'flex'
+        } else {
+            elem.style.display = 'none'
+        }
+
+    }
+</script>
+</body>
+
+</html>
